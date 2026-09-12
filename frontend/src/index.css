@@ -1,0 +1,603 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2560px;
+}
+
+:root {
+  --accent-color: #0078d4;
+  --accent-color-hover: #005a9e;
+  --accent-color-light: rgba(0, 120, 212, 0.15);
+  --win11-bg-dark: #1e1e1e;
+  --win11-bg-light: #ffffff;
+  --win11-surface-light: #f3f3f3;
+  --win11-surface-dark: #2d2d2d;
+  --win11-border-light: rgba(0, 0, 0, 0.1);
+  --win11-border-dark: rgba(255, 255, 255, 0.1);
+  --win11-success: #107c10;
+  --win11-warning: #ffb900;
+  --win11-error: #f7630c;
+  --win11-info: #0078d4;
+}
+
+body {
+  font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--accent-color, #0078d4);
+  color: #ffffff;
+}
+
+/* ================= FLUENT DESIGN 2.0 SYSTEM CLASSES ================= */
+.bg-accent {
+  background-color: var(--accent-color) !important;
+}
+
+.bg-accent-hover:hover {
+  background-color: var(--accent-color-hover) !important;
+}
+
+.bg-accent-light {
+  background-color: var(--accent-color-light) !important;
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.border-accent {
+  border-color: var(--accent-color) !important;
+}
+
+.ring-accent {
+  --tw-ring-color: var(--accent-color) !important;
+}
+
+/* Mica Effect Material */
+.mica-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.dark .mica-effect {
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* Windows 11 Standard Component Utilities */
+.win11-btn-filled {
+  background-color: var(--accent-color, #0078d4);
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 150ms cubic-bezier(0.1, 0.9, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid transparent;
+}
+
+.win11-btn-filled:hover {
+  filter: brightness(1.1);
+}
+
+.win11-btn-filled:active {
+  filter: brightness(0.9);
+}
+
+.win11-btn-standard {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #d0d0d0;
+  color: #1e1e1e;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 150ms cubic-bezier(0.1, 0.9, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dark .win11-btn-standard {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f1f5f9;
+}
+
+.win11-btn-standard:hover {
+  background-color: #f3f3f3;
+}
+
+.dark .win11-btn-standard:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.win11-btn-subtle {
+  background-color: transparent;
+  color: inherit;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: all 150ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.win11-btn-subtle:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.dark .win11-btn-subtle:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.win11-card {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding: 16px;
+  transition: border-color 150ms ease;
+}
+
+.dark .win11-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #242424;
+}
+
+/* ================= WINDOWS 11 SLEEK SCROLLBARS ================= */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(140, 140, 140, 0.35) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(140, 140, 140, 0.35);
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(140, 140, 140, 0.65);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent-color, #0078d4);
+}
+
+::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.dark * {
+  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.42);
+}
+
+.dark ::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent-color, #0078d4);
+}
+
+/* ================= NOTEPAD RICH DOCUMENT FORMATTING ================= */
+.notepad-editor {
+  tab-size: 4;
+}
+
+/* ================= MOBILE & TOUCH SPECIFIC UTILITIES ================= */
+
+/* Safe Area Insets Support for iOS Notch & Dynamic Island */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.safe-left {
+  padding-left: env(safe-area-inset-left, 0px);
+}
+
+.safe-right {
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* Touch targets and tap highlight prevention */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Momentum scrolling for iOS & Android */
+.smooth-scroll,
+.overflow-y-auto,
+.overflow-x-auto,
+.overflow-auto {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
+
+/* Touch manipulation to eliminate 300ms tap delay */
+button,
+a,
+input,
+select,
+textarea,
+[role="button"],
+.touch-target {
+  touch-action: manipulation;
+}
+
+/* Touch ripple animation */
+@keyframes touch-ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.touch-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.touch-ripple::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.touch-ripple:active::after {
+  animation: touch-ripple 0.4s ease-out;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Prevent auto-zoom on iOS Safari input focus (enforce >=16px font size on small screens) */
+@media (max-width: 768px) {
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Apple Pencil & Touch drawing canvas optimization */
+canvas.touch-drawing {
+  touch-action: none !important;
+  -webkit-touch-callout: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+/* Material Design style button ripple */
+.ripple-surface {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+/* iPad Split View & Multi-window Layout Helpers */
+@media (min-width: 768px) and (max-width: 1366px) {
+  .ipad-split-left {
+    width: 50% !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 48px !important;
+    height: auto !important;
+  }
+  .ipad-split-right {
+    width: 50% !important;
+    left: 50% !important;
+    top: 0 !important;
+    bottom: 48px !important;
+    height: auto !important;
+  }
+  .ipad-slide-over {
+    width: 375px !important;
+    max-width: 90vw !important;
+    right: 16px !important;
+    top: 16px !important;
+    bottom: 64px !important;
+    height: auto !important;
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.45) !important;
+  }
+}
+
+/* Bottom safe-area clearance for iPhone Home Bar */
+.pb-safe-home {
+  padding-bottom: max(16px, env(safe-area-inset-bottom, 16px));
+}
+
+/* Complete Scrollbar-none utility */
+.scrollbar-none, .no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+.scrollbar-none::-webkit-scrollbar, .no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Notepad Rich Text Editor Content Styling */
+.notepad-editor h1 {
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important;
+  font-weight: 700 !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.notepad-editor h2 {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  font-weight: 600 !important;
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.notepad-editor h3 {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 600 !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.notepad-editor h4 {
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.notepad-editor h5 {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-top: 0.3rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.notepad-editor h6 {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.15rem !important;
+}
+
+.notepad-editor p {
+  margin-bottom: 0.5rem !important;
+  line-height: 1.6 !important;
+}
+
+.notepad-editor ul {
+  list-style-type: disc !important;
+  padding-left: 1.75rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.notepad-editor ul[type="disc"] {
+  list-style-type: disc !important;
+}
+
+.notepad-editor ul[type="circle"] {
+  list-style-type: circle !important;
+}
+
+.notepad-editor ul[type="square"] {
+  list-style-type: square !important;
+}
+
+.notepad-editor ol {
+  list-style-type: decimal !important;
+  padding-left: 1.75rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.notepad-editor ol.list-decimal,
+.notepad-editor ol[data-list-type="decimal"],
+.notepad-editor ol[type="1"] {
+  list-style-type: decimal !important;
+}
+.notepad-editor ol.list-decimal > li,
+.notepad-editor ol[data-list-type="decimal"] > li {
+  list-style-type: decimal !important;
+}
+
+.notepad-editor ol.list-upper-alpha,
+.notepad-editor ol[data-list-type="upper-alpha"],
+.notepad-editor ol[type="A" s],
+.notepad-editor ol[type="A"] {
+  list-style-type: upper-alpha !important;
+}
+.notepad-editor ol.list-upper-alpha > li,
+.notepad-editor ol[data-list-type="upper-alpha"] > li,
+.notepad-editor ol[type="A" s] > li,
+.notepad-editor ol[type="A"] > li {
+  list-style-type: upper-alpha !important;
+}
+
+.notepad-editor ol.list-lower-alpha,
+.notepad-editor ol[data-list-type="lower-alpha"],
+.notepad-editor ol[type="a" s] {
+  list-style-type: lower-alpha !important;
+}
+.notepad-editor ol.list-lower-alpha > li,
+.notepad-editor ol[data-list-type="lower-alpha"] > li,
+.notepad-editor ol[type="a" s] > li {
+  list-style-type: lower-alpha !important;
+}
+
+.notepad-editor ol.list-upper-roman,
+.notepad-editor ol[data-list-type="upper-roman"],
+.notepad-editor ol[type="I" s],
+.notepad-editor ol[type="I"] {
+  list-style-type: upper-roman !important;
+}
+.notepad-editor ol.list-upper-roman > li,
+.notepad-editor ol[data-list-type="upper-roman"] > li,
+.notepad-editor ol[type="I" s] > li,
+.notepad-editor ol[type="I"] > li {
+  list-style-type: upper-roman !important;
+}
+
+.notepad-editor ol.list-lower-roman,
+.notepad-editor ol[data-list-type="lower-roman"],
+.notepad-editor ol[type="i" s] {
+  list-style-type: lower-roman !important;
+}
+.notepad-editor ol.list-lower-roman > li,
+.notepad-editor ol[data-list-type="lower-roman"] > li,
+.notepad-editor ol[type="i" s] > li {
+  list-style-type: lower-roman !important;
+}
+
+.notepad-editor li {
+  display: list-item !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.notepad-editor b,
+.notepad-editor strong {
+  font-weight: 700 !important;
+}
+
+.notepad-editor i,
+.notepad-editor em {
+  font-style: italic !important;
+}
+
+.notepad-editor s,
+.notepad-editor strike,
+.notepad-editor del {
+  text-decoration: line-through !important;
+}
+
+.notepad-editor u {
+  text-decoration: underline !important;
+}
+
+.notepad-editor a {
+  color: #0284c7 !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
+.dark .notepad-editor a {
+  color: #38bdf8 !important;
+}
+
+.notepad-editor table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 12px 0 !important;
+  border: 1px solid rgba(148, 163, 184, 0.5) !important;
+}
+
+.dark .notepad-editor table {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.notepad-editor th {
+  border: 1px solid rgba(148, 163, 184, 0.5) !important;
+  padding: 8px 12px !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  background-color: rgba(148, 163, 184, 0.15) !important;
+}
+
+.dark .notepad-editor th {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.notepad-editor td {
+  border: 1px solid rgba(148, 163, 184, 0.35) !important;
+  padding: 8px 12px !important;
+  min-width: 40px !important;
+}
+
+.dark .notepad-editor td {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+
+
+

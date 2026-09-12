@@ -1,0 +1,70 @@
+[
+  {
+    "id": "msg_1789220796503_pzvoj2i",
+    "name": "Test User",
+    "email": "test@example.com",
+    "subject": "Test Subject",
+    "message": "This is a test message of at least ten characters.",
+    "attachments": [],
+    "timestamp": "2026-09-12T13:46:36.503Z",
+    "ipAddress": "127.0.0.1",
+    "userAgent": "curl/7.88.1",
+    "status": "delivered",
+    "emailSent": true,
+    "provider": "smtp"
+  },
+  {
+    "id": "msg_1789236622839_963e7ha",
+    "name": "System Verification",
+    "email": "verifier@test.com",
+    "subject": "Test Dispatch",
+    "message": "Verifying email delivery pipeline works smoothly without any Bad Request exceptions.",
+    "timestamp": "2026-09-12T18:10:22.838Z",
+    "ipAddress": "127.0.0.1",
+    "status": "delivered",
+    "emailSent": true,
+    "provider": "smtp"
+  },
+  {
+    "id": "msg_1789244550220_6c60kz4",
+    "name": "Recruiter / Hiring Lead",
+    "email": "talent@innovatech.io",
+    "subject": "Excited about your Full Stack & AI Experience!",
+    "message": "Hello Anish,\n\nWe were really impressed by your interactive Windows OS portfolio and AI engineering capabilities. Would you be open to a 20-minute chat this week?\n\nBest regards,\nTalent Acquisition Team",
+    "attachments": [],
+    "timestamp": "2026-09-12T20:22:30.220Z",
+    "ipAddress": "2409:40c1:6410:a7c8:fda1:7186:ed1e:e8ab",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "status": "delivered",
+    "emailSent": true,
+    "provider": "gmail_smtp"
+  },
+  {
+    "id": "msg_1789246682891_1voyx29",
+    "name": "Recruiter / Hiring Lead",
+    "email": "talent@innovatech.io",
+    "subject": "Excited about your Full Stack & AI Experience!",
+    "message": "Hello Anish,\n\nWe were really impressed by your interactive Windows OS portfolio and AI engineering capabilities. Would you be open to a 20-minute chat this week?\n\nBest regards,\nTalent Acquisition Team",
+    "attachments": [],
+    "timestamp": "2026-09-12T20:58:02.891Z",
+    "ipAddress": "2409:40c1:6410:a7c8:fda1:7186:ed1e:e8ab",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "status": "delivered",
+    "emailSent": true,
+    "provider": "gmail_smtp"
+  },
+  {
+    "id": "msg_1789248278811_1ej7lsa",
+    "name": "Test User",
+    "email": "test@example.com",
+    "subject": "Test Inquiry",
+    "message": "Hello Anish, testing the contact form.",
+    "attachments": [],
+    "timestamp": "2026-09-12T21:24:38.810Z",
+    "ipAddress": "127.0.0.1",
+    "userAgent": "curl/7.88.1",
+    "status": "delivered",
+    "emailSent": true,
+    "provider": "google_oauth"
+  }
+]

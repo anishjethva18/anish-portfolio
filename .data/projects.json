@@ -1,0 +1,59 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Windows 11 Interactive Web OS",
+    "description": "Pixel-perfect desktop operating system in modern React with persistent VFS, WebGL filters, terminal shell, and live microservices.",
+    "technologies": [
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "Vite"
+    ],
+    "category": "Full Stack",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+    "githubUrl": "https://github.com/anish-jethva/windows11-portfolio",
+    "liveUrl": "https://anishjethva.dev",
+    "stars": 128,
+    "featured": true,
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "id": "proj-2",
+    "title": "Cognitive AI Research Assistant",
+    "description": "Multi-agent retrieval system and generative summarizer with real-time vector search and context synthesis.",
+    "technologies": [
+      "Gemini 2.5",
+      "Python",
+      "FastAPI",
+      "Pinecone",
+      "React"
+    ],
+    "category": "AI/ML",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80",
+    "githubUrl": "https://github.com/anish-jethva/ai-research-agent",
+    "liveUrl": "https://research.anishjethva.dev",
+    "stars": 94,
+    "featured": true,
+    "createdAt": "2026-02-10T00:00:00.000Z"
+  },
+  {
+    "id": "proj-3",
+    "title": "Distributed Cloud Log Streamer",
+    "description": "High-throughput Kafka & Redis logging broker with sub-millisecond telemetry ingestion and Grafana dashboards.",
+    "technologies": [
+      "Go",
+      "Kafka",
+      "Redis",
+      "Docker",
+      "Kubernetes"
+    ],
+    "category": "Backend",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=80",
+    "githubUrl": "https://github.com/anish-jethva/cloud-log-streamer",
+    "stars": 67,
+    "featured": false,
+    "createdAt": "2026-03-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "task-1",
+    "userId": "usr_admin_anish",
+    "title": "Deploy Production Windows 11 Portfolio with Docker & CI/CD",
+    "description": "Set up multi-stage container build and automated unit/e2e testing suite.",
+    "status": "completed",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-08-20",
+    "tags": [
+      "DevOps",
+      "Docker",
+      "CI/CD"
+    ],
+    "createdAt": "2026-08-01T10:00:00.000Z",
+    "updatedAt": "2026-08-15T12:00:00.000Z",
+    "completedAt": "2026-08-15T12:00:00.000Z"
+  },
+  {
+    "id": "task-2",
+    "userId": "usr_admin_anish",
+    "title": "Implement Multi-tab VSCode IDE Application",
+    "description": "Provide developer environment with syntax preview, terminal link, and code runner.",
+    "status": "in_progress",
+    "priority": "urgent",
+    "category": "Feature",
+    "dueDate": "2026-08-18",
+    "tags": [
+      "React",
+      "Monaco/VSCode",
+      "VFS"
+    ],
+    "createdAt": "2026-08-10T14:00:00.000Z",
+    "updatedAt": "2026-08-16T08:00:00.000Z"
+  },
+  {
+    "id": "task-3",
+    "userId": "usr_admin_anish",
+    "title": "Integrate Real-time Telemetry & Security Audit Monitoring",
+    "description": "Log API response times, visitor flows, and geographic points of origin in Admin Dashboard.",
+    "status": "pending",
+    "priority": "medium",
+    "category": "Portfolio",
+    "dueDate": "2026-08-25",
+    "tags": [
+      "Analytics",
+      "Security",
+      "Telemetry"
+    ],
+    "createdAt": "2026-08-12T09:00:00.000Z",
+    "updatedAt": "2026-08-12T09:00:00.000Z"
+  },
+  {
+    "id": "task_1786876618299_ue17",
+    "userId": "usr_admin_anish",
+    "title": "Automated CI/CD Test Task",
+    "status": "pending",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-08-16T10:36:58.299Z",
+    "tags": [
+      "Task"
+    ],
+    "createdAt": "2026-08-16T10:36:58.299Z",
+    "updatedAt": "2026-08-16T10:36:58.299Z"
+  },
+  {
+    "id": "task_1786876764514_jsjr",
+    "userId": "usr_admin_anish",
+    "title": "Automated CI/CD Test Task",
+    "status": "pending",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-08-16T10:39:24.514Z",
+    "tags": [
+      "Task"
+    ],
+    "createdAt": "2026-08-16T10:39:24.514Z",
+    "updatedAt": "2026-08-16T10:39:24.514Z"
+  },
+  {
+    "id": "task_1786877174727_68dy",
+    "userId": "usr_admin_anish",
+    "title": "Automated CI/CD Test Task",
+    "status": "pending",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-08-16T10:46:14.727Z",
+    "tags": [
+      "Task"
+    ],
+    "createdAt": "2026-08-16T10:46:14.727Z",
+    "updatedAt": "2026-08-16T10:46:14.727Z"
+  },
+  {
+    "id": "task_1789236267047_sv3v",
+    "userId": "usr_admin_anish",
+    "title": "Automated CI/CD Test Task",
+    "status": "pending",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-09-12T18:04:27.047Z",
+    "tags": [
+      "Task"
+    ],
+    "createdAt": "2026-09-12T18:04:27.047Z",
+    "updatedAt": "2026-09-12T18:04:27.047Z"
+  },
+  {
+    "id": "task_1789236273336_o0kw",
+    "userId": "usr_admin_anish",
+    "title": "Automated CI/CD Test Task",
+    "status": "pending",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-09-12T18:04:33.336Z",
+    "tags": [
+      "Task"
+    ],
+    "createdAt": "2026-09-12T18:04:33.336Z",
+    "updatedAt": "2026-09-12T18:04:33.336Z"
+  },
+  {
+    "id": "task_1789236602805_0ym7",
+    "userId": "usr_admin_anish",
+    "title": "Automated CI/CD Test Task",
+    "status": "pending",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-09-12T18:10:02.804Z",
+    "tags": [
+      "Task"
+    ],
+    "createdAt": "2026-09-12T18:10:02.805Z",
+    "updatedAt": "2026-09-12T18:10:02.805Z"
+  },
+  {
+    "id": "task_1789237705650_o46u",
+    "userId": "usr_admin_anish",
+    "title": "Automated CI/CD Test Task",
+    "status": "pending",
+    "priority": "high",
+    "category": "Portfolio",
+    "dueDate": "2026-09-12T18:28:25.650Z",
+    "tags": [
+      "Task"
+    ],
+    "createdAt": "2026-09-12T18:28:25.650Z",
+    "updatedAt": "2026-09-12T18:28:25.650Z"
+  }
+]

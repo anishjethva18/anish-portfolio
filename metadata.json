@@ -1,0 +1,6 @@
+{
+  "name": "Windows 11 OS Portfolio",
+  "description": "A production-ready full-stack Windows 11 web operating system featuring authentic desktop UI, JWT authentication, persistent file system, File Explorer, Terminal, Edge Browser, Camera, Photos, Settings, and native apps.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
