@@ -186,7 +186,7 @@ const createPortfolioEmailHtml = (data: ValidatedContactBody, id: string): strin
           <tr>
             <td style="border-top: 1px solid #e5e7eb; background-color: #ffffff; padding: 24px 36px; text-align: center;">
               <p style="margin: 0 0 6px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; color: #6b7280; line-height: 1.5;">
-                &copy; 2026 Anish Jethva. All rights reserved. &middot; <a href="https://anishs-portfolio-e4ks.onrender.com/" target="_blank" style="color: #4f46e5; text-decoration: none; font-weight: 500;">Portfolio OS</a>
+                &copy; 2026 Anish Jethva. All rights reserved. &middot; <a href="https://anishjethva.onrender.com/" target="_blank" style="color: #4f46e5; text-decoration: none; font-weight: 500;">Portfolio OS</a>
               </p>
               <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; color: #9ca3af; line-height: 1.4;">
                 Delivered securely via Google OAuth 2.0 &middot; Message ID: <span style="font-family: monospace; color: #6b7280;">${id}</span>
@@ -315,7 +315,7 @@ const createSenderConfirmationEmailHtml = (data: ValidatedContactBody, id: strin
                     <table border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
                       <tr>
                         <td align="center" style="border-radius: 10px; background-color: #4f46e5; text-align: center;">
-                          <a href="https://anishs-portfolio-e4ks.onrender.com/" target="_blank" style="display: inline-block; padding: 13px 32px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; color: #ffffff !important; text-decoration: none; border-radius: 10px; letter-spacing: -0.2px;">Explore Portfolio OS</a>
+                          <a href="https://anishjethva.onrender.com/" target="_blank" style="display: inline-block; padding: 13px 32px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; color: #ffffff !important; text-decoration: none; border-radius: 10px; letter-spacing: -0.2px;">Explore Portfolio OS</a>
                         </td>
                       </tr>
                     </table>
@@ -332,7 +332,7 @@ const createSenderConfirmationEmailHtml = (data: ValidatedContactBody, id: strin
           <tr>
             <td style="border-top: 1px solid #e5e7eb; background-color: #ffffff; padding: 24px 36px; text-align: center;">
               <p style="margin: 0 0 6px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; color: #6b7280; line-height: 1.5;">
-                &copy; 2026 Anish Jethva. All rights reserved. &middot; <a href="https://anishs-portfolio-e4ks.onrender.com/" target="_blank" style="color: #4f46e5; text-decoration: none; font-weight: 500;">Portfolio OS</a>
+                &copy; 2026 Anish Jethva. All rights reserved. &middot; <a href="https://anishjethva.onrender.com/" target="_blank" style="color: #4f46e5; text-decoration: none; font-weight: 500;">Portfolio OS</a>
               </p>
               <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; color: #9ca3af; line-height: 1.4;">
                 Delivered securely via Google OAuth 2.0 &middot; Message ID: <span style="font-family: monospace; color: #6b7280;">${id}</span>
